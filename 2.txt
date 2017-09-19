@@ -1,0 +1,37 @@
+1. 다음 중 네이티브가 아닌 것은?
+  1) Object 2) Math 3) Function 4) Array 5) Window 6) Button
+  
+2. 다음은 ?
+  > var a = new String("abc");
+  > typeof a 
+  : ??
+
+3. 다음 값은?
+
+  >  var a = new Array(3);
+  >  var b = [ undefined, undefined, undefined ];
+  >  var c = [];
+  >  c.length = 3;
+  > a
+  : ??
+  > b
+  : ???
+  > c
+  : ???
+  
+4. 다음 값은?
+  > var a = new Array(3);
+  > var b = [ undefined, undefined, undefined ]
+  > a.join('-')
+  : ??
+  > b.join('-')
+  : ??
+  > a.map(function(v, i) { return i; });
+  : ??
+  > b.map(function(v, i) { return i; });
+  : ??
+  
+5. 4번 문제 'b'의 형태를 직접 손으로 입력하지 않고 출력하는 방법은?
+
+6. 네이티브 생성자 Error() 와  쓰는 연산자는?
+
