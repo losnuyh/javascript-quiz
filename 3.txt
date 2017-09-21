@@ -39,3 +39,5 @@
 
 7. 명세가 정의한 'falsy' 값은 ?
 
+8. 객체는 falsy? truthy?
+
