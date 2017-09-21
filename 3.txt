@@ -29,15 +29,15 @@
   > JSON.stringify(b);
   : ??
   
-5. JSON.stringify() 메소드 두번째 인자를 이용하여 다음 객체 a 의 프로퍼티중 c,d만 뽑아내세요.
+6. JSON.stringify() 메소드 두번째 인자를 이용하여 다음 객체 a 의 프로퍼티중 c,d만 뽑아내세요.
   > var a = { b:2, c:3, d:4, e:5};
   1) [] 이용하여서..
   2) function 이용하여서..
 
-6. JSON.stringify() 메소드의 3번째 인자가 하는 일은?
+7. JSON.stringify() 메소드의 3번째 인자가 하는 일은?
 
 
-7. 명세가 정의한 'falsy' 값은 ?
+8. 명세가 정의한 'falsy' 값은 ?
 
-8. 객체는 falsy? truthy?
+9. 객체는 falsy? truthy?
 
