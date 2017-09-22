@@ -41,3 +41,19 @@
 
 9. 객체는 falsy? truthy?
 
+10. 다음 a,b,c의 boolean값은?
+  > var a = new Boolean(false)
+  > var b = new Number(0)
+  > var c = new String("")
+
+
+11. falsy 객체란?
+
+12. 다음 값은?
+  > var a = {};
+  > var b = [];
+  > var c = function(){};
+  > Boolean(a && b && c);
+  : ??
+  
+  
