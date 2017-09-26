@@ -93,8 +93,19 @@ return void 0;
   : ??
   
  
-17. -0 과 0을 비교하는 방법은?
-
+17. 다음 값은? 
+  > var a = 0/-3;
+  > var b = '-0';
+  > JSON.stringify(a);
+  : ??
+  > a.toString();
+  : ??
+  > JSON.stringify('-0');
+  : ??
+  > b.toString();
+  : ??
+  > -0 === 0
+  : ??
 
 18. 다음 값은??
 
@@ -111,3 +122,105 @@ var b = -3 * 0
 
 19. 배열을 수정하는 function A에 a=[1,2,3]를 보낼때 a가 손상입지않게 전달하는 방법은?
 
+
+
+
+
+-------
+
+정답 :
+
+1) Object
+
+2) "object"
+
+3) "object"
+
+4) (typeof null == "object" && !null)   > null만 True
+
+5) True
+
+6) undefined
+
+7) 
+  a.length == 1
+  a == [1, foo:"bar"]
+  
+8)
+  a.length == 2
+  a == [1, 2]
+  
+9) 5번 / 대입 불가
+
+10) 
+  > Array.prototype.map.call("test", v => { return v+'! ' }).join()
+  : "t! ,e! ,s! , t! "
+  > Array.prototype.map.call("test", v => { return v+'! ' }).join('')  
+  : "t! e! s! t!"
+   * join() 과  join('') 차이를 잘 보세요
+   
+11) 
+  > a.split('').reverse().join('')
+  : "oof"
+  > a.split()
+  : ["foo"]
+
+12)
+  > 0.1 + 0.2 == 0.3;
+  : false
+  > Math.abs( (0.1 + 0.2) - 0.3 ) < Number.EPSILON;
+  : true
+  
+13) 변수 a에 대하여
+  1 - 정수인지 확인  : Number.isInteger(a);
+  2 - 안전한 정수인지 확인 : Number.isSafeInteger(a);
+ *** )
+  자바스크립트에서 정수는 -(253 - 1) 부터 +(253 + 1) 까지의 수만 사용할 수 있다. 
+  즉, -9007199254740991부터 9007199254740991까지  >>> Number.MAX_SAFE_INTEGER // Number.MIN_SAFE_INTEGER 
+  이 범위 안에서만 정확한 정수의 값을 가져올 수 있다는 말이다. 
+
+  이 범위를 벗어난 정수에 대해서는, 
+  짝수(even number)일 경우에는 정확한 값을 가져올 수 있지만, 
+  홀수(odd number)일 경우에는 엉뚱한 값이 나올 수 있다. 
+
+  따라서, 정확한 계산을 할 수 있는 정수인지를 체크할 필요가 있다. 
+  바로 이 경우에 사용되는 함수가 isSafeInteger()이다.
+
+14) 2번
+
+15) return ;
+
+16) 
+  > a;
+  : NaN
+  > typeof a;
+  : number
+  > isNaN(a);
+  : true
+  > isNaN(b);
+  : true
+  > Number.isNaN(b);
+  : false
+  
+17)
+  > JSON.stringify(a);
+  : 0
+  > a.toString();
+  : '0'
+  > JSON.stringify('-0');
+  : "'-0'"
+  > b.toString();
+  : '-0'
+  > -0 === 0
+  : true
+  
+18)
+  > Object.is(a, NaN);
+  : true
+  > Object.is(b, -0)
+  : true
+  > Object.is(b, 0)
+  : false
+  
+19. 배열을 수정하는 function A에 a=[1,2,3]를 보낼때 a가 손상입지않게 전달하는 방법은?
+  a.slice() // JSON.parse(JSON.stringify(a))
