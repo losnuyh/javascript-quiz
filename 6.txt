@@ -1,0 +1,8 @@
+1. 모든 LHS, RHS는 각각 몇개인가
+  > function foo(a) {
+      var b = a;
+      return a + b;
+    }
+  > var c = foo(2);
+  
+
