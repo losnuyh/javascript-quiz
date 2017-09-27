@@ -22,6 +22,54 @@
   2) getTime 사용
   3) now 사용
   
-4. 
+4. 틸드(~)를 이용하여 다음 작업을 수행하세요.
+  1) indexOf를 이용한, 검색결과 판별
+  2) 53.3의 소숫점을 잘라내세요.
+  3) 위 2번의 작업시, 만약 음수라면?
+  
+5. 다음값은
+  > var a = "42";
+  > var b = "42px";
+  > Number(a);
+  : ??
+  > parseInt(a);
+  : ??
+  > Number(b);
+  : ??
+  > parseInt(b);
+  : ??
+  
+  이유는 무엇??
+  
+6. 다음값을 추론하고, 이유를 생각해보시오
+  > parseInt(1/0, 19);
+  : ??
+  > parseInt(0.000008);
+  : ??
+  > parseInt(0.0000008);
+  : ??
+  > parseInt(false, 16);
+  : ??
+  > parseInt(parseInt, 16);
+  : ??
+  > parseInt("0x10");
+  :??
+  > parseInt("103", 2); 
+  : ??
+  
+7. 다음 값을 Boolean()을 통해  명시적인 강제변환한 값은?
+  > var a = "0";
+  > var b = [];
+  > var c = {};
+  > var d = "";
+  > var e = 0;
+  > var f = null;
+  > var g;
+
+8. Boolean()을 통한 명시적변환고 같은 것은?
+
+
+
+
   
   
