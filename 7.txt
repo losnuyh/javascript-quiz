@@ -21,5 +21,19 @@
   > speak.call(you);
   : ??
   
+2. 1번 문제 코드에 .call를 사용하지않고 명시적인 인자로 값을 넘겨주도록 코드를 다시 짜라.
 
+3. this는 함수의 스코프를 가르킨다? O, X
+
+4. 다음 값은?
+  > function foo(){
+      console.log(this.a);
+    }
+  > var obj = {
+      a: 2
+    }
+  > foo.call( obj );
+  : ??
   
+
+      
