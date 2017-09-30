@@ -56,3 +56,32 @@
   > testFUnc()
   : ??
   
+  
+9. 일반 함수일때와, Fat Arrow 함수일때 값 차이는?
+
+  var object = {
+    f1: function(){
+        console.log(this);
+        var f2 = function() { console.log(this); }
+        f2();
+        setTimeout(f2, 1000);
+    }
+  }
+  object.f1();
+  : ????????
+
+  var object = {
+    f1: () => {
+        console.log(this);
+        var f2 = () => { console.log(this); }
+        f2();
+        setTimeout(f2, 1000);
+    }
+  }
+  object.f1()
+  : ??????????
+  
+  
+  
+  
+  : ??
