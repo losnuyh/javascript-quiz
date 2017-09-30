@@ -22,3 +22,37 @@
   > console.log(b);
   : ??
   
+3. spread operator를 이용하여 다음과 같은 값을 만들어내세요.
+  > var arr1 = [2,3,4];
+  > var arr2 = [1];
+  > Array.prototype.push.apply(arr2, arr1);
+  > console.log(arr2);
+  : [1,2,3,4]
+  
+  
+4. let [a, , , ...b] = [1, 2, 3, 4, 5, 6];
+    a, b의 값은??
+    
+5. let [a, b, c = 3] = [1, 2];
+     a? b? c?
+ 
+6.  let [a, b, [c, d]] = [1, 2, [3, 4]];
+
+7. 다음 값은? 
+  > let values = {name: 'cocol', age: 3};
+  > let x, y;
+  > ({name: x, age: y} = values );
+  > x
+  : ???
+  > y
+  : ???
+  
+8.다음 값은?
+  > function testFunc({a=1, b=2}={}){
+      console.log(a, b)
+    }
+  > testFunc({a:3})
+  : ??
+  > testFUnc()
+  : ??
+  
